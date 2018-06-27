@@ -1,3 +1,6 @@
+# virtualenv
+venv/
+
 # Logs
 logs
 *.log
