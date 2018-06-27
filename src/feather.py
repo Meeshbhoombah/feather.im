@@ -2,8 +2,8 @@
 
 """feather.py
 
-Opens a new video daemon and streams the video to ASCII art using the video to
-ASCII layer.
+Streams video from the webcam using OpenCV and converts the video stream to
+black and white to determine brightness.
 """
 
 import curses
@@ -15,7 +15,7 @@ import sys
 def log(text):
     text = str(text)
 
-    with open("log.txt", "w") as f:
+    with open("log.txt", "w+") as f:
         f.write(text)
 
 
